@@ -34,6 +34,12 @@ html, body {
 			font-size: 40px;
 		}
 
+		#instructions {
+			display: block;
+			font-weight: 300;
+			font-size: 0.6em;
+		}
+
 		@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
 		*, *:after, *:before {
 		  box-sizing: border-box;
@@ -223,5 +229,9 @@ html, body {
 
 			#greyLine {
 				display: block;
+			}
+
+			#instructions {
+				display: none;
 			}
 		}
