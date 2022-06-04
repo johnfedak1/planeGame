@@ -1,0 +1,227 @@
+html, body {
+			height: 100%;
+			overflow: hidden;
+	 		-webkit-user-select: none; /* Safari */
+ 			-ms-user-select: none; /* IE 10 and IE 11 */
+  			user-select: none; /* Standard syntax */
+		}
+		
+		
+		#character {
+			position: absolute;
+		}
+
+		.wrap {
+			background-color: black;
+			width: 100%;
+			height: 100%;
+		}
+
+		.yourScore {
+			position: absolute;
+			top: 0.5%;
+			left: 10%;
+			color: white;
+			font-size: 40px;
+			margin: 0px;
+		}
+
+		.highScore {
+			position: absolute;
+			top: 0.5%;
+			right: 10%;
+			color: white;
+			font-size: 40px;
+		}
+
+		@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+		*, *:after, *:before {
+		  box-sizing: border-box;
+		}
+
+		.pacman {
+		  width: 70px;
+		  height: 70px;
+		  border-radius: 50%;
+		  background: #F2D648;
+		  position: relative;
+		}
+
+		.pacman__eye {
+		  position: absolute;
+		  width: 10px;
+		  height: 10px;
+		  border-radius: 50%;
+		  top: 20px;
+		  right: 40px;
+		  background: #333333;
+		}
+
+		.pacman__mouth {
+		  background: #000;
+		  position: absolute;
+		  width: 100%;
+		  height: 100%;
+		  clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+		}
+
+		.whiteLine {
+			width: 100vw; 
+			height: 20px; 
+			background-color: white; 
+			position: absolute; 
+			top: 50%;
+		}
+
+		.blueBorder {
+			height: 100%; 
+			border: 50px solid blue;
+		}
+
+		.blueBottom {
+			position: absolute; 
+			height: 50px; 
+			bottom: -5px; 
+			background-color: blue;
+		}
+
+		#villain {
+			color: white; 
+			font-size: 3em; 
+			transform: rotate(90deg);
+			display: inline-block;
+			position: absolute;
+			left: 150px;
+		}
+
+		#welcomeMessage {
+			display: none;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 3em;
+		}
+
+		#welcomeMessage a {
+			color: red;
+		}
+
+		#gameOverMessage {
+			display: none;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: white;
+			font-size: 3em;
+		}
+
+		#gameOverMessage a {
+			color: red;
+		}
+
+		#gameOver {
+			display: none;
+		}
+
+		#newHighScore {
+			display: none;
+		}
+
+		.bulletStyle {
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			background-color: red;
+		}
+
+		#greyLine {
+			display: none;
+			position: absolute; 
+			bottom: 23%; 
+			background-color: white; 
+			width: 100vw; 
+			height: 5px;
+		}
+
+		[type=mobileMove] {
+			display: none;
+			font-weight: bold;
+			font-size: 25px;
+		}
+
+		[type=mobileMove] p {
+			-webkit-touch-callout: none; /* iOS Safari */
+    		-webkit-user-select: none; /* Safari */
+     		-khtml-user-select: none; /* Konqueror HTML */
+       		-moz-user-select: none; /* Old versions of Firefox */
+        	-ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+		}
+
+		#mobileLeft {
+			display: none;
+			position: absolute;
+			bottom: 15%;
+			left: 20%;
+			width: 125px;
+			height: 90px;
+			background-color: red;
+		}
+
+		#mobileRight {
+			display: none;
+			position: absolute;
+			bottom: 5%;
+			left: 20%;
+			width: 125px;
+			height: 90px;
+			background-color: red;
+		}
+
+		#mobileUp {
+			display: none;
+			position: absolute;
+			bottom: 15%;
+			right: 20%;
+			width: 125px;
+			height: 90px;
+			background-color: red;
+		}
+
+		#mobileDown {
+			display: none;
+			position: absolute;
+			bottom: 5%;
+			right: 20%;
+			width: 125px;
+			height: 90px;
+			background-color: red;
+		}
+
+		@media only screen and (max-width: 1200px) {
+			[type=mobileMove] {
+				display: flex !important;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.whiteLine {
+				top: 30%;
+			}
+
+			#welcomeMessage {
+				top: 50%;
+			}
+
+			#gameOverMessage {
+				top: 50%;
+			}
+
+			#greyLine {
+				display: block;
+			}
+		}
