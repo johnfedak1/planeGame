@@ -30,10 +30,6 @@ $stmt->fetch();
 
 echo $highScore;
 
-// $arr_values = array("Standard"=> $standard, "Efficiency"=> $efficiency);
-
-// echo json_encode($arr_values);
-
 $stmt->close();
 $conn->close();
 
