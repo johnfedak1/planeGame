@@ -421,7 +421,7 @@ function initWindow() {
 	if (url.includes("gameOver")) {
 		let params = new URLSearchParams(document.location.search);
 		let score = params.get("score");
-		window.history.replaceState(null, "", "https://johnfedak.com/projects/planeGame");
+		window.history.replaceState(null, "", "/projects/planeGame");
 		let gameOverMessage = document.querySelector("#gameOverMessage");
 		document.getElementById("finalScore").textContent = score;
 		if (parseInt(score.replace(":", "")) > parseInt(highScore.replace(":", ""))) {
@@ -455,7 +455,6 @@ function initWindow() {
 	} else { 
 		let welcomeMessage = document.querySelector("#welcomeMessage");
 		welcomeMessage.style.display = "block";
-		console.log(highScore);
 		highScoreElem.textContent = highScore;
 		document.getElementById("highScore").innerHTML = highScore;
 		document.querySelector("#startGame").addEventListener("click", () => {
